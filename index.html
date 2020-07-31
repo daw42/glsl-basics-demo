@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="view-container">
+                <canvas id="gl-canvas">
+                    Oops ... your browser doesn't support the HTML5 canvas element
+                </canvas>
+            </div>
+
+            <div id="side-panel">
+                <div id="controls">
+                    <div class="title">GLSL Shader Examples</div>
+                    <div class="input-group">
+                        <select id="shader-select">
+                            <option value="simple">Constant Color</option>
+                            <option value="uniform">Uniform variables</option>
+                            <option value="diffuse">Diffuse shading (per-vertex)</option>
+                            <option value="blinn-phong">Blinn-Phong model (per-vertex)</option>
+                            <option value="blinn-phong-perfrag">Blinn-Phong model (per-fragment)</option>
+                            <option value="texture">Shading with textures</option>
+                        </select>
+                        <select id="scene-select">
+                            <option value="spheres">Spheres</option>
+                            <option value="teapot">Teapot</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="shader-view">
+                    <div id="vertex-shader-container">
+                        <div class="shader-title">Vertex Shader</div>
+                        <textarea readonly id="vshader-code"></textarea>
+                    </div>
+                    <div id="fragment-shader-container">
+                        <div class="shader-title">Fragment Shader</div>
+                        <textarea readonly id="fshader-code"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load the main script module -->
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

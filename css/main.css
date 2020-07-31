@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { width: 100%; height: 100%;}
+
+#main-container {
+    display: flex;
+    height: 100%;
+}
+
+#shader-view {
+    font-size: 10pt;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#shader-view textarea {
+    width: 100%;
+    font-size: 9pt;
+    font-family: "Roboto mono", "Courier", monospace;
+    flex-grow: 1;
+}
+
+#shader-view > div {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.shader-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: rgb(212, 212, 212);
+    color: black;
+    font-weight: bold;
+}
+
+#view-container {
+    position: relative;
+    flex: auto;
+    min-width: 640px;
+    min-height: 480px;
+    overflow:visible;
+}
+
+#side-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+#controls {
+    font-size: 12px;
+    font-family: Arial,sans-serif;
+    background: rgb(212, 212, 212);
+    min-width: 550px;
+    color: black;
+}
+
+#controls .title {
+    font-size: 115%;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#controls .disabled {
+    color: rgb(180,180,180);
+}
+
+.control-row {
+    display: flex;
+    padding: 2px 0;
+}
+
+.control-row-vertical {
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.input-group {
+    border-bottom: rgb(148, 146, 146) solid 1px;
+    padding: 8px 10px;
+}
